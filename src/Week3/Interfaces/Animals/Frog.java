@@ -1,6 +1,6 @@
-package Week3.Interfaces;
+package Week3.Interfaces.Animals;
 
-public class Frog implements LandAnimal, WaterAnimal{
+public class Frog implements LandAnimal, WaterAnimal {
     @Override
     public void isBreathing() {
 
