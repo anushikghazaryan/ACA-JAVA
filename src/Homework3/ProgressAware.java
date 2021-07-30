@@ -18,11 +18,25 @@ public class ProgressAware {
     }
 
     public boolean isProgressVisible() {
-        return this.visibility
-                ;
+        return this.visibility;
     }
 
     public void showProgress(int seconds) {
+        long start = System.currentTimeMillis();
+        long fix = start;
+        long current = start;
 
+        while(current - fix <= seconds * 1000L) {
+            if(current - start >= 100) {
+                start = System.currentTimeMillis();
+                float proc = (current - fix) / 1000f / seconds * 100;
+                print(proc);
+            }
+            current = System.currentTimeMillis();
+        }
+    }
+
+    void print(float p) {
+        System.out.println(p);
     }
 }

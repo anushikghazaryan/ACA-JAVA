@@ -2,17 +2,11 @@ package Week3;
 
 public class Laptop {
     private static int count;
-    private String name;
 
     public static void main(String[] args) {
-        // Static fields
         Laptop laptop1 = new Laptop();
+        setCount(15);
         Laptop laptop2 = new Laptop();
-        Laptop laptop3 = new Laptop();
-        Laptop laptop4 = new Laptop();
-        Laptop laptop5 = new Laptop();
-
-        laptop1.setName("asus");
     }
 
     public Laptop() {
@@ -20,8 +14,7 @@ public class Laptop {
         System.out.println(count);
     }
 
-    public Laptop setName(String name) {
-        this.name = name;
-        return this;
+    public static void setCount(int value) {
+        count = value;
     }
 }

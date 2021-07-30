@@ -1,7 +1,7 @@
 package Homework3;
 
 class LineProgressAware extends ProgressAware {
-    private int lineLength;
+    private final int lineLength;
 
     public LineProgressAware(int lineLength) {
         if(lineLength >= 0) {
@@ -12,7 +12,12 @@ class LineProgressAware extends ProgressAware {
     }
 
     @Override
-    public void showProgress() {
-        System.out.printf("Line width is: %d, Progress length is %d%n", lineLength, lineLength);
+    public void showProgress(int seconds) {
+        super.showProgress(seconds);
+    }
+
+    @Override
+    void print(float p) {
+        super.print(p);
     }
 }
