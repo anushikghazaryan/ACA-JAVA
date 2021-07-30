@@ -15,6 +15,7 @@ public class Laptop {
         laptop1.setName("asus");
     }
 
+    //բացի public-ից պետք էր ունենալ նաև protected կոնստրուկտր
     public Laptop() {
         count++;
         System.out.println(count);
