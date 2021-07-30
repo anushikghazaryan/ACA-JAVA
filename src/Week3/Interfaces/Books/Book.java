@@ -1,4 +1,4 @@
-package Week3.Interfaces.Animals.Books;
+package Week3.Interfaces.Books;
 
 public interface Book {
     void open();

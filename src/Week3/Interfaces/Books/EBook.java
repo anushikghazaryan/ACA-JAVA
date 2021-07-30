@@ -1,4 +1,4 @@
-package Week3.Interfaces.Animals.Books;
+package Week3.Interfaces.Books;
 
 public class EBook implements Book {
     private int numberOfPages;
