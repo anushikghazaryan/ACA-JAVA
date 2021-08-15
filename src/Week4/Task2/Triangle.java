@@ -43,6 +43,6 @@ public class Triangle {
 
     @Override
     public String toString() {
-        return a.toString() + b.toString() + c.toString();
+        return "A: " + a.toString() + "; " + "B: " + b.toString() + "; " + "C: " + c.toString();
     }
 }

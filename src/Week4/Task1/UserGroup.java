@@ -1,5 +1,7 @@
 package Week4.Task1;
 
+import java.util.Arrays;
+
 public class UserGroup implements Cloneable{
     private User[] users;
     private int nextIndex;
@@ -38,5 +40,10 @@ public class UserGroup implements Cloneable{
             users[i] = users[i].clone();
         }
         return clone;
+    }
+
+    @Override
+    public String toString() {
+        return "UserGroup{" + "users=" + Arrays.toString(users) + ", nextIndex=" + nextIndex + '}';
     }
 }

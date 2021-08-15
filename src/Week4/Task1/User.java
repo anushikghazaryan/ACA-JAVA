@@ -57,4 +57,9 @@ public class User implements Cloneable{
     protected User clone() throws CloneNotSupportedException {
         return (User) super.clone();
     }
+
+    @Override
+    public String toString() {
+        return "User{" + "firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", userName='" + userName + '\'' + ", email='" + email + '\'' + '}';
+    }
 }

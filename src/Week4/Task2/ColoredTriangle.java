@@ -13,8 +13,7 @@ public class ColoredTriangle extends Triangle{
 
     @Override
     public String toString() {
-        return "color=" + color + super.toString() +
-                '}';
+        return "color=" + color.getRGB() + "; " + super.toString() + '}';
     }
 
     @Override
